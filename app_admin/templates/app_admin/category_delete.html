@@ -1,0 +1,10 @@
+{% extends 'base_admin.html' %}
+{% block main %}
+	<h4>Delete subject "{{ category.category }}</h4>
+    <form method="post">
+        {% csrf_token %}
+    <input type="submit" value="Confirm Delete" class="btn btn-danger">
+    </form>
+    <p></p>
+    <p><a href="{% url 'app_admin:category_list' %}">Kategooriate nimekiri</a></p>
+{% endblock %}
