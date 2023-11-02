@@ -1,4 +1,7 @@
 {% extends 'base_admin.html' %}
 {% block main %}
     <h1>Kehtna bistroo</h1>
+    <a href="{% url 'app_admin:category_list' %}></a>
+    <a href="{% url 'app_admin:category_create' %}></a>
+
 {% endblock %}

@@ -13,6 +13,6 @@ from django.urls import reverse_lazy
 
 
 class HomeView(TemplateView):
-    template_name = 'app_public/index.html'
+    template_name = 'app_public/public_menu.html'
 
 
